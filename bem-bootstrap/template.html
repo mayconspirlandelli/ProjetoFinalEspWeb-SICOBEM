@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Template SiCoBem</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- JavaScript -->
+	<!-- JQuery  2.1.4 -->
+	<!-- Bootstrap  3.3.6 -->	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+	<!-- Material Design Lite 1.0.6 -->
+	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<script src="js/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+</head>
+
+<body>	
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="navPrincipal">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" 
+				data-toggle="collapse" data-target="#navbar" 
+				aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>				
+			</button>
+			<a class="navbar-brand" href="#">SiCoBem</a>
+		</div>
+
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Cadastro</a></li>
+				<li><a href="#">Movimentações</a></li>
+				<li><a href="#">Conferência</a></li>
+				<li><a href="#">Relatórios</a></li>					
+				<li><a href="#">Usuário</a></li>					
+			</ul>				
+		</div>			
+	</div>
+</nav>
+
+
+
+
+
+<div id="main" class="container-fluid">
+	<h3 class="page-header">Cadastro de Bem Material</h3>
+
+
+	<div class="row">
+		<div class="col-md-2 col-sm-2 col-xs-2">
+			<p>Menu Lateral</p>
+
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+				Button
+			</button>
+
+			<div class="row"><!--  Menu Lateral -->				
+				<!-- <div class="col-md-12 col-sm-3 col-xs-8"> -->
+				<div class="col-md-12">
+					<ul class="list-group collapse" id="colapseUm">
+						<li class="list-group-item"><a href="#">Cadastro</a></li>
+						<li class="list-group-item"><a href="#">Movimentações</a></li>
+						<li class="list-group-item"><a href="#">Conferência</a></li>
+						<li class="list-group-item"><a href="#">Relatórios</a></li>					
+						<li class="list-group-item"><a href="#">Usuário</a></li>					
+					</ul>				
+				</div>
+			</div> <!-- Menu Lateral -->
+		</div>
+
+		<div class="col-md-7 col-sm-7 col-xs-7">
+			<p>Conteudo principal</p>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Cadastro de Bem Material</h3>
+						</div>						
+						<div class="panel-body"> <!-- Conteudo -->
+							
+							<div class="row">
+								<div class="from-group col-md-6">
+									<label for="campo8">Nome</label>
+									<input type="text" class="form-control" id="campo8"></input>
+								</div>
+
+								<div class="from-group col-md-6">
+									<label for="campo9">Descrição</label>
+									<input type="text" class="form-control" id="campo9"></input>
+								</div>
+							</div>
+
+						</div>
+						<div class="panel-footer"> <!-- Rodape -->
+							<button class="btn btn-success" type="submit">Atualizar</button>					
+							<a href="index.html" class="btn btn-default">Cancelar</a>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="col-md-3">			
+
+			<div class="row"> <!-- Barra de Ferrametnas -->
+				<p>Barra de Ferramentas</p>				
+				<div class="col-md-12">
+					<div class="btn-toolbar pull-right" role="toolbar">				
+						<button type="button" class="btn btn-primary glyphicon glyphicon-inbox"></button>
+						<button type="button" class="btn btn-primary glyphicon glyphicon-print"></button>
+						<button type="button" class="btn btn-primary glyphicon glyphicon-search"></button>
+						<button type="button" class="btn btn-primary glyphicon glyphicon-user"></button>
+						<button type="button" class="btn btn-primary glyphicon glyphicon-pencil"></button>
+					</div>
+				</div>
+			</div> <!-- Barra de Ferrametnas -->
+
+			<div class="row"> <!-- Mensagens de alerta -->
+				<p>Mensagens</p>				
+				<div class="col-md-12">
+					<div class="alert alert-success alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert" arial-label="Fechar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<p>
+							<strong>
+								Cadastrado com sucesso! <a href="#" class="alert-link pull-right">LISTAR</a>
+							</strong>
+						</p>
+					</div>
+					<div class="alert alert-info alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert" arial-label="Fechar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<p>
+							<strong>
+								Cadastrado com sucesso! <a href="#" class="alert-link pull-right">LISTAR</a>
+							</strong>
+						</p>
+					</div>
+					<div class="alert alert-warning alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert" arial-label="Fechar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<p>
+							<strong>
+								Cadastrado com sucesso! <a href="#" class="alert-link pull-right">LISTAR</a>
+							</strong>
+						</p>
+					</div>
+					<div class="alert alert-danger alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert" arial-label="Fechar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<p>
+							<strong>
+								Cadastrado com sucesso! <a href="#" class="alert-link pull-right">LISTAR</a>
+							</strong>
+						</p>
+					</div>
+				</div>
+			</div> <!-- Mensagens de alerta -->
+
+		</div> <!-- Barra de Ferramentas e Mensagens -->
+
+	</div>
+
+
+
+
+
+
+
+	<!-- <div class="row">
+		<div class="col-md-2">
+			<ul class="list-group">
+				<li class="list-group-item"><a href="#">Cadastro</a></li>
+				<li class="list-group-item"><a href="#">Movimentações</a></li>
+				<li class="list-group-item"><a href="#">Conferência</a></li>
+				<li class="list-group-item"><a href="#">Relatórios</a></li>					
+				<li class="list-group-item"><a href="#">Usuário</a></li>					
+			</ul>				
+		</div>
+		<div class="col-md-10">
+			<div class="btn-toolbar pull-right" role="toolbar">
+				
+				<button type="button" class="btn btn-primary glyphicon glyphicon-inbox"></button>
+				<button type="button" class="btn btn-primary glyphicon glyphicon-print"></button>
+				<button type="button" class="btn btn-primary glyphicon glyphicon-search"></button>
+				<button type="button" class="btn btn-primary glyphicon glyphicon-user"></button>
+				<button type="button" class="btn btn-primary glyphicon glyphicon-pencil"></button>
+			</div>
+		</div>
+	</div> -->
+
+
+</div> <!-- div#main -->
+
+
+</body>
+</html>

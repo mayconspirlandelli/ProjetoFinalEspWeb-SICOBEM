@@ -16,18 +16,16 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-
 	<!-- Material Design Lite 1.0.6 -->
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
 	<script src="js/material.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.teal-indigo.min.css" /> 
 	
 </head>
 
 <body>	
 
-	<!-- <nav class="navbar navbar-inverse navbar-fixed-top" id="navPrincipal">
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="navPrincipal">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button class="navbar-toggle collapsed" 
@@ -51,56 +49,7 @@
 			</ul>				
 		</div>			
 	</div>
-</nav> -->
-
-<!-- Teste com MAterial Desing -->
-
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="layoutMdl">
-	<header class="mdl-layout__header">
-		<div class="mdl-layout__header-row">
-			<!-- Title -->
-			<span class="mdl-layout-title">Cadastro de Bem Material</span>
-			<!-- Add spacer, to align navigation to the right -->
-			<div class="mdl-layout-spacer"></div>
-			<!-- Navigation. We hide it in small screens. -->
-			<nav class="mdl-navigation mdl-layout--large-screen-only">
-				<a class="mdl-navigation__link" href="">Cadastro</a>
-				<a class="mdl-navigation__link" href="">Movimentações</a>
-				<a class="mdl-navigation__link" href="">Conferência</a>
-				<a class="mdl-navigation__link" href="">Relatórios</a>
-				<a class="mdl-navigation__link" href="">Usuário</a>
-			</nav>
-			<div>
-				<!-- Right aligned menu below button -->
-				<button id="demo-menu-lower-right"
-				class="mdl-button mdl-js-button mdl-button--icon">
-				<i class="material-icons">more_vert</i>
-			</button>				
-			<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-			for="demo-menu-lower-right">				  
-			<li disabled class="mdl-menu__item">Disabled Action</li>
-			<li class="mdl-menu__item">Sair</li>
-		</ul>
-	</div>
-</div>
-</header>
-<div class="mdl-layout__drawer">
-	<span class="mdl-layout-title">SiCoBem</span>
-	<nav class="mdl-navigation">
-		<a class="mdl-navigation__link" href="">Cadastro</a>
-		<a class="mdl-navigation__link" href="">Movimentações</a>
-		<a class="mdl-navigation__link" href="">Conferência</a>
-		<a class="mdl-navigation__link" href="">Relatórios</a>
-		<a class="mdl-navigation__link" href="">Usuário</a>
-	</nav>
-</div>
-</div>
-
-<!-- Teste com MAterial Desing -->
-
-
-
+</nav>
 
 <div id="main" class="container-fluid">
 	<h3 class="page-header">Cadastro de Bem Material</h3>
@@ -110,7 +59,10 @@
 		<div class="col-md-2 col-sm-2 col-xs-2">
 			<p>Menu Lateral</p>
 
-			
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+				Button
+			</button>
+
 			<div class="row"><!--  Menu Lateral -->				
 				<!-- <div class="col-md-12 col-sm-3 col-xs-8"> -->
 				<div class="col-md-12">
@@ -148,11 +100,8 @@
 							</div>
 
 						</div>
-						<div class="panel-footer"> <!-- Rodape -->							
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-								Atualizar
-							</button>
-							<button class="btn btn-success" type="submit">Atualizar</button>
+						<div class="panel-footer"> <!-- Rodape -->
+							<button class="btn btn-success" type="submit">Atualizar</button>					
 							<a href="index.html" class="btn btn-default">Cancelar</a>
 						</div>
 					</div>
@@ -225,7 +174,37 @@
 
 	</div>
 
+
+
+
+
+
+
+	<!-- <div class="row">
+		<div class="col-md-2">
+			<ul class="list-group">
+				<li class="list-group-item"><a href="#">Cadastro</a></li>
+				<li class="list-group-item"><a href="#">Movimentações</a></li>
+				<li class="list-group-item"><a href="#">Conferência</a></li>
+				<li class="list-group-item"><a href="#">Relatórios</a></li>					
+				<li class="list-group-item"><a href="#">Usuário</a></li>					
+			</ul>				
+		</div>
+		<div class="col-md-10">
+			<div class="btn-toolbar pull-right" role="toolbar">
+				
+				<button type="button" class="btn btn-primary glyphicon glyphicon-inbox"></button>
+				<button type="button" class="btn btn-primary glyphicon glyphicon-print"></button>
+				<button type="button" class="btn btn-primary glyphicon glyphicon-search"></button>
+				<button type="button" class="btn btn-primary glyphicon glyphicon-user"></button>
+				<button type="button" class="btn btn-primary glyphicon glyphicon-pencil"></button>
+			</div>
+		</div>
+	</div> -->
+
+
 </div> <!-- div#main -->
+
 
 </body>
 </html>

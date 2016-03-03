@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cadastro de Instituição - SICOBEM</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- JavaScript -->
+	<!-- JQuery  2.1.4 -->
+	<!-- Bootstrap  3.3.6 -->	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>	
+
+	<div id="wrapper">
+
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top" id="navPrincipal">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button class="navbar-toggle collapsed" 
+						data-toggle="collapse" data-target=".navbar-ex1-collapse" 
+						aria-expanded="false" aria-controls="navbar">				
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>				
+						</button>
+
+						<a id="bnt-toggle" href="#" class="navbar-brand glyphicon glyphicon-menu-hamburger"
+							data-element=".navbar-ex1-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<a class="navbar-brand" href="#">SiCoBem</a>
+					</div>		
+
+					<!-- Top Menu Items -->
+					<ul class="nav navbar-right top-nav">                
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><i class="glyphicon glyphicon-user"></i> Profile</a>
+								</li>
+								<li>
+									<a href="#"><i class="glyphicon glyphicon-inbox"></i> Inbox</a>
+								</li>
+								<li>
+									<a href="#"><i class="glyphicon glyphicon-option-vertical"></i> Settings</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#"><i class="glyphicon glyphicon-log-out"></i> Log Out</a>
+								</li>
+							</ul>
+						</li>
+					</ul> <!-- Fim - Top Menu Items -->
+				</div> <!-- Fim - div.container-fluid -->
+
+
+				<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav side-nav">
+						<li class="active">
+							<a href="#" data-toggle="collapse" data-target="#sub-item-cadastro">
+								Cadastros <i class="caret"></i></a>
+							<ul id="sub-item-cadastro" class="collapse">
+							    <li><a href="#">Instituição</a></li>
+							    <li><a href="#">Departamento</a></li>
+							    <li><a href="#">Local</a></li>
+							    <li><a href="#">Bem Material</a></li>
+							    <li><a href="#">Grupo de Bens</a></li>
+							</ul>
+			            </li>
+						<li><a href="#">Movimentações</a></li>
+						<li><a href="#">Conferência</a></li>			
+						<li>
+							<a href="#" data-toggle="collapse" data-target="#sub-item-relatorio">
+								Relatórios <i class="caret"></i></a>
+							<ul id="sub-item-relatorio" class="collapse">
+							    <li>
+							        <a href="#">Relatório de Bens</a>
+							    </li>
+							    <li>
+							        <a href="#">Relatório por Local</a>
+							    </li>
+							</ul>
+			            </li>
+						<li><a href="#">Usuário</a></li>
+					</ul>
+				</div> <!-- Fim - Sidebar -->
+			</nav> <!-- Fim - nav.navbar -->
+		</header>
+
+		<section>
+			<div id="page-wrapper">
+
+				<div class="container-fluid">
+					<!-- Page Heading  -->
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="page-header">Cadastro de Instituição</h3>
+
+							<!-- Caminho de Navegação -->
+							<ol class="breadcrumb">
+								<li><a href="#">Relatórios</a></li>	
+								<li class="active"><a href="#">Relatório de Bens</li></a>
+							</ol>
+						</div>
+ 					</div> <!-- Fim - Page Heading  -->
+
+					<!-- Mensagens de alerta -->
+					<div class="row mensagens"> 		
+						<div class="col-md-8"></div>
+						<div class="col-md-4">
+							<div class="alert alert-success alert-dismissible" role="alert">
+								<button type="button" class="close" data-dismiss="alert" arial-label="Fechar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<p>
+									<strong>
+										Cadastrado com sucesso! <a href="#" class="alert-link pull-right">LISTAR</a>
+									</strong>
+								</p>
+							</div>
+							<!-- <div class="alert alert-info alert-dismissible hi role="alert">
+								<button type="button" class="close" data-dismiss="alert" arial-label="Fechar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<p>
+									<strong>
+										Cadastrado com sucesso! <a href="#" class="alert-link pull-right">LISTAR</a>
+									</strong>
+								</p>
+							</div>
+							<div class="alert alert-warning alert-dismissible" role="alert">
+								<button type="button" class="close" data-dismiss="alert" arial-label="Fechar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<p>
+									<strong>
+										Cadastrado com sucesso! <a href="#" class="alert-link pull-right">LISTAR</a>
+									</strong>
+								</p>
+							</div>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+								<button type="button" class="close" data-dismiss="alert" arial-label="Fechar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<p>
+									<strong>
+										Cadastrado com sucesso! <a href="#" class="alert-link pull-right">LISTAR</a>
+									</strong>
+								</p>
+							</div> -->
+						</div>
+					</div> <!-- Fim - Mensagens de alerta -->
+
+					<form>
+						<div class="row conteudo-principal"> <!-- Conteudo principal -->
+							<div class="col-md-12">
+								<div class="panel panel-default">							
+									<div class="panel-body"> <!-- Conteudo -->								
+										<div class="row">
+											<div class="from-group col-md-6">
+												<label for="campo8">Nome</label>
+												<input type="text" class="form-control" id="campo8"></input>
+											</div>
+											<div class="from-group col-md-6">
+												<label for="campo9">Descrição</label>
+												<input type="text" class="form-control" id="campo9"></input>
+											</div>
+										</div>
+									</div> <!-- div.panel-body -->
+									<div class="panel-footer"> <!-- Rodape -->
+										<button class="btn btn-success" type="submit">Atualizar</button>					
+										<a href="index.html" class="btn btn-default">Cancelar</a>
+									</div>
+								</div> <!-- div.panel -->
+							</div> <!-- div.col-md-12 -->
+						</div> <!-- div.row Conteudo principal -->
+					</form>
+
+				</div> <!-- container-fluid -->						
+			</div> <!-- div#page-wrapper -->
+		</section> <!-- section -->
+
+		<footer>
+			<!-- Rodape -->			
+		</footer>
+
+    </div> <!-- /#wrapper -->
+</body>
+</html>
